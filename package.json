@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint": "eslint --ext \".ts,.tsx\" \"**/*.{ts,tsx,*.ts,*tsx}\"",
     "lint:fix": "eslint --fix --ext \".ts,.tsx\" \"**/*.{ts,tsx,*.ts,*tsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
